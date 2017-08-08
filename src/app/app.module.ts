@@ -13,6 +13,7 @@ import { WelcomeComponent } from './components/landing-page/welcome/welcome.comp
 import { NavbarComponent } from './components/landing-page/navbar/navbar.component';
 import { ParticlesComponent } from './components/landing-page/particles/particles.component';
 import { MainPageComponent } from './components/dashboard/main-page/main-page.component';
+import { NavbarDashboardComponent } from './components/dashboard/navbar-dashboard/navbar-dashboard.component';
 // Dashboard Components
 
 // Router Configuration
@@ -24,7 +25,8 @@ import { MainPageComponent } from './components/dashboard/main-page/main-page.co
     WelcomeComponent,
     NavbarComponent,
     ParticlesComponent,
-    MainPageComponent
+    MainPageComponent,
+    NavbarDashboardComponent
   ],
   imports: [
     BrowserModule,

@@ -19,7 +19,12 @@ import { OrderComponent } from './components/dashboard/main-page/order/order.com
 // Dashboard Components
 
 // Router Configuration
-
+const appRoutes: Routes = [
+  { path: '', component: WelcomeComponent },
+  { path: 'dashboard', component: MainPageComponent, children: [
+    { path: 'order', component: OrderComponent }
+  ]}
+];
 
 @NgModule({
   declarations: [
@@ -37,7 +42,7 @@ import { OrderComponent } from './components/dashboard/main-page/order/order.com
     ParticlesModule,
     FlashMessagesModule,
     FormsModule,
-    RouterModule
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
